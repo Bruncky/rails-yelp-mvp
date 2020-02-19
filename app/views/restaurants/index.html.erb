@@ -4,12 +4,9 @@
         <% @restaurants.each do |restaurant| %>
         <li>
             <h1>
-                <%= link_to restaurant.name, restaurant_path(restaurant) %> &#8211
-                <a href="<%= restaurant_path(restaurant) %>" data-method="delete">
-                    <i class="fas fa-trash-alt"></i>
-                </a>
+                <%= link_to restaurant.name, restaurant_path(restaurant) %> &#8211 <%= restaurant.category.capitalize %>
             </h1>
-            <p><%= restaurant.address %></p>
+            <p><span class="restaurant-address"><%= restaurant.address %></span><br><span class="phone-number"><%= restaurant.phone_number %></span></p>
         </li>
         <% end %>
     </ul>

@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Restaurants</h1>
+    <ul>
+        <% @restaurants.each do |restaurant| %>
+        <li>
+            <h1>
+                <%= link_to restaurant.name, restaurant_path(restaurant) %> &#8211
+                <a href="<%= restaurant_path(restaurant) %>" data-method="delete">
+                    <i class="fas fa-trash-alt"></i>
+                </a>
+            </h1>
+            <p><%= restaurant.address %></p>
+        </li>
+        <% end %>
+    </ul>
+    <a class="btn btn-primary" href="http://localhost:3000/restaurants/new" role="button">Create New Restaurant</a>
+</div>

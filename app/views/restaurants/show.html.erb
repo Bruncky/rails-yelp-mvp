@@ -4,3 +4,12 @@
     <%= link_to "Back to Restaurants", restaurants_path, class: "btn btn-danger" %>
     <%= link_to "Add Review", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
 </div>
+<div class="container">
+    <div class="row">
+        <% @restaurant.reviews.each do |review| %>
+            <div class="col-6">
+                <div class="card"><%= review.content %><br><%= review.rating %></div>
+            </div>
+        <% end %>
+    </div>
+</div>

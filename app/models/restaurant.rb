@@ -2,7 +2,7 @@
 
 # Restaurant Model
 class Restaurant < ApplicationRecord
-  CATEGORIES = %w[chinese italian japanese french belgian].freeze
+  CATEGORIES = %w[chinese italian japanese french brazilian].freeze
 
   has_many :reviews, dependent: :destroy
 

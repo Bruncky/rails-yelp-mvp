@@ -1,2 +1,54 @@
 // Import page-specific CSS files here.
 @import "home";
+
+body {
+  padding: 30px;
+  background-color: #2D3D4E;
+  color: white;
+  text-align: left;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+
+  li {
+
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+
+      i {
+        color: #FD1015;
+        font-size: 20px;
+      }
+    }
+
+    a {
+      // vertical-align: middle;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+#article-description {
+  margin-top: 5px;
+}
+
+.container {
+  width: 40%;
+}

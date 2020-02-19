@@ -1,0 +1,24 @@
+<%= form_for @restaurant do |form| %>
+    <div class="form-group">
+        <label for="restaurant-name">Name</label>
+        <%= form.text_field :name, id: "restaurant-name", class: "form-control", autocomplete: "off" %>
+        <small class="form-text text-muted">What's the restaurant's name?</small>
+    </div>
+    <div class="form-group">
+        <label for="restaurant-address">Address</label>
+        <small class="form-text text-muted">Restaurant's address here</small>
+        <%= form.text_area :address, id: "restaurant-address", class: "form-control", rows: "3" %>
+    </div>
+    <div class="form-group">
+        <label for="restaurant-phone-number">Phone Number</label>
+        <small class="form-text text-muted">Restaurant's phone number here</small>
+        <%= form.text_field :phone_number, id: "restaurant-phone-number", class: "form-control", autocomplete: "off" %>
+    </div>
+    <div class="form-group">
+        <label for="restaurant-category">Cuisine</label>
+        <small class="form-text text-muted">Restaurant's cuisine here</small>
+        <%= form.text_field :category, id: "restaurant-category", class: "form-control", autocomplete: "off" %>
+    </div>
+    <%= link_to "Back to Restaurants", restaurants_path, class: "btn btn-danger" %>
+    <%= form.submit "Confirm", class: "btn btn-success" %>
+<% end %>

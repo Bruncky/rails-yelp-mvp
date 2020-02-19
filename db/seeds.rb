@@ -4,7 +4,7 @@ PARAMS = {
   name: 'Barbacoa',
   address: 'São Paulo',
   phone_number: '11 1234-5678',
-  category: 'brazilian'
+  category: 'italian'
 }.freeze
 
 5.times do

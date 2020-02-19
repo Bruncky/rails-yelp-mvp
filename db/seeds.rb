@@ -1,6 +1,6 @@
 # frozen_string_literal:true
 
-PARAMS = {
+RESTAURANT_PARAMS = {
   name: 'Barbacoa',
   address: 'São Paulo',
   phone_number: '11 1234-5678',
@@ -8,5 +8,5 @@ PARAMS = {
 }.freeze
 
 5.times do
-  Restaurant.create(PARAMS)
+  @restaurant = Restaurant.create(RESTAURANT_PARAMS)
 end

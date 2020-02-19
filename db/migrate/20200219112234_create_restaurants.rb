@@ -9,8 +9,6 @@ class CreateRestaurants < ActiveRecord::Migration[5.2]
       t.integer :number
       t.string :category
 
-      has_many :reviews
-
       t.timestamps
     end
   end

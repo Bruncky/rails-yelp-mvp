@@ -7,8 +7,6 @@ class CreateReviews < ActiveRecord::Migration[5.2]
       t.text :content
       t.integer :rating
 
-      belongs_to :restaurant
-
       t.timestamps
     end
   end

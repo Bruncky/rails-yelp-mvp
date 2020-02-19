@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_02_19_112629) do
     t.integer "restaurant_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["restaurant_id"], name: "index_reviews_on_restaurant_id"
   end
 
 end
